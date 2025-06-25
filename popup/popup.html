@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VegTag Filters</title>
+    <style>
+      body { font-family: sans-serif; padding: 10px; width: 220px; }
+      label { display: block; margin: 6px 0; }
+    </style>
+  </head>
+  <body>
+    <h3>VegTag Filters</h3>
+    <label><input type="checkbox" id="filter_vegan" /> 🟣 Vegan</label>
+    <label><input type="checkbox" id="filter_vegetarian" /> 🟢 Vegetarian</label>
+    <label><input type="checkbox" id="filter_no_onion_garlic" /> 🟠 No Onion-Garlic</label>
+    <label><input type="checkbox" id="filter_jain" /> 🔵 Jain</label>
+    <button id="save">Save</button>
+    <p id="status" style="font-size: 12px;"></p>
+    <script src="popup.js"></script>
+  </body>
+</html>

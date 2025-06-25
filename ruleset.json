@@ -1,0 +1,6 @@
+{
+  "non_veg": ["chicken", "beef", "pork", "fish", "egg", "gelatin", "lard", "shellfish", "anchovy", "rennet", "meat"],
+  "non_vegan": ["milk", "butter", "cheese", "cream", "honey", "ghee", "casein", "whey", "yogurt", "egg", "gelatin"],
+  "onion_garlic": ["onion", "garlic"],
+  "jain_restricted": ["onion", "garlic", "potato", "carrot", "radish", "beetroot", "turnip"]
+}

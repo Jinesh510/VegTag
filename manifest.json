@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "VegTag",
+  "version": "1.0",
+  "description": "Shows vegetarian, vegan, Jain, and no-onion-garlic tags on grocery sites.",
+  "permissions": ["scripting", "storage"],
+  "host_permissions": [
+    "https://www.amazon.sg/*",
+    "https://www.fairprice.com.sg/*",
+    "https://*.walmart.com/*",
+    "https://www.wholefoodsmarket.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.sg/*",
+        "https://www.fairprice.com.sg/*",
+        "https://*.walmart.com/*",
+        "https://www.wholefoodsmarket.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "128": "icons/icon128.png"
+  }
+}

@@ -1,0 +1,11 @@
+.vegtag-badge {
+  font-size: 14px;
+  margin-top: 8px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: #eef6ef;
+  color: #2e7d32;
+  font-weight: bold;
+  display: inline-block;
+  border: 1px solid #c8e6c9;
+}

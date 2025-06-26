@@ -1,20 +1,30 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>VegTag Filters</title>
-    <style>
-      body { font-family: sans-serif; padding: 10px; width: 220px; }
-      label { display: block; margin: 6px 0; }
-    </style>
-  </head>
-  <body>
-    <h3>VegTag Filters</h3>
-    <label><input type="checkbox" id="filter_vegan" /> 🟣 Vegan</label>
-    <label><input type="checkbox" id="filter_vegetarian" /> 🟢 Vegetarian</label>
-    <label><input type="checkbox" id="filter_no_onion_garlic" /> 🟠 No Onion-Garlic</label>
-    <label><input type="checkbox" id="filter_jain" /> 🔵 Jain</label>
-    <button id="save">Save</button>
-    <p id="status" style="font-size: 12px;"></p>
-    <script src="popup.js"></script>
-  </body>
+<head>
+  <style>
+    body { font-family: sans-serif; padding: 10px; width: 300px; }
+    h3 { margin-top: 20px; }
+    ul { list-style-type: none; padding-left: 0; }
+  </style>
+</head>
+<body>
+  <h3>Diet Preferences</h3>
+  <label><input type="checkbox" name="diet" value="vegetarian"> Vegetarian</label>
+  <label><input type="checkbox" name="diet" value="vegan"> Vegan</label>
+  <label><input type="checkbox" name="diet" value="jain"> Jain</label>
+  <label><input type="checkbox" name="diet" value="no-onion-garlic"> No Onion-Garlic</label>
+  
+
+  <h3>Allergens to Avoid</h3>
+  <label><input type="checkbox" name="allergen" value="milk"> Milk</label><br>
+  <label><input type="checkbox" name="allergen" value="soy"> Soy</label><br>
+  <label><input type="checkbox" name="allergen" value="peanut"> Peanut</label><br>
+
+  <input type="text" id="customAllergenInput" placeholder="Add custom allergen (e.g., gluten)">
+  <button id="addCustomAllergenBtn">Add</button>
+  <ul id="customAllergenList"></ul>
+
+  <script src="popup.js"></script>
+</body>
 </html>

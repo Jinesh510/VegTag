@@ -8,7 +8,17 @@
     "https://www.amazon.sg/*",
     "https://www.fairprice.com.sg/*",
     "https://*.walmart.com/*",
-    "https://www.wholefoodsmarket.com/*"
+    "https://www.wholefoodsmarket.com/*",
+    "https://www.kroger.com/*",
+    "https://www.instacart.com/*",
+    "https://www.target.com/*",
+    "https://www.safeway.com/*",
+    "https://www.albertsons.com/*",
+    "https://www.harristeeter.com/*",
+    "https://www.foodlion.com/*",
+    "https://www.publix.com/*",
+    "https://www.sprouts.com/*",
+    "https://www.traderjoes.com/*"
   ],
   "content_scripts": [
     {
@@ -16,7 +26,17 @@
         "https://www.amazon.sg/*",
         "https://www.fairprice.com.sg/*",
         "https://*.walmart.com/*",
-        "https://www.wholefoodsmarket.com/*"
+        "https://www.wholefoodsmarket.com/*",
+        "https://www.kroger.com/*",
+        "https://www.instacart.com/*",
+        "https://www.target.com/*",
+        "https://www.safeway.com/*",
+        "https://www.albertsons.com/*",
+        "https://www.harristeeter.com/*",
+        "https://www.foodlion.com/*",
+        "https://www.publix.com/*",
+        "https://www.sprouts.com/*",
+        "https://www.traderjoes.com/*"
       ],
       "js": ["content.js"],
       "css": ["styles.css"]

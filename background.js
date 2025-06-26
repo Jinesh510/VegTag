@@ -16,6 +16,26 @@ You are a food ingredient classifier. Based on the ingredient list, classify the
 - Does it contain Onion or Garlic? (Yes/No)
 - Is it Jain Compliant? (Yes/No)
 
+Vegan edge cases:
+- Honey, gelatin, casein, whey, shellac, carmine, animal rennet, albumin, beeswax, isinglass, confectioner's glaze, and cochineal are not vegan.
+- Cheese is only vegan if made with plant-based or microbial rennet.
+- Plant-based butters such as almond butter, peanut butter, cashew butter, cocoa butter, sunflower butter, etc., are vegan. Only dairy butter is not vegan.
+- If an ingredient is ambiguous (e.g., 'natural flavors', 'enzymes'), assume non-vegan for strictness.
+
+Vegetarian edge cases:
+- Gelatin, animal rennet, isinglass, lard, suet, broths/stocks (chicken, beef, fish), fish sauce, oyster sauce, and meat/fish/egg ingredients are not vegetarian.
+- Cheese is only vegetarian if made with microbial or vegetarian rennet.
+- If an ingredient is ambiguous (e.g., 'natural flavors', 'enzymes'), assume non-vegetarian for strictness.
+
+Jain edge cases:
+- Root vegetables (potato, carrot, beet, radish, onion, garlic, shallot, leek, chive, scallion, turnip, etc.), mushrooms, fermented foods (yeast, vinegar), honey, and asafoetida (hing) are not Jain.
+- Leek, shallot, chive, scallion, and powders/extracts of these are considered similar to onion/garlic for Jain diets.
+- If an ingredient is ambiguous, assume non-Jain for strictness.
+
+No-onion-garlic edge cases:
+- Onion, garlic, leek, shallot, chive, scallion, and powders/extracts of these are not allowed in no-onion-garlic diets.
+- If an ingredient is ambiguous, assume not compliant for strictness.
+
 Ingredients:
 ${ingredientsText}
 
